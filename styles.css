@@ -1,0 +1,279 @@
+/*Mainpage*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/backgroundImage.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*Navar*/
+a{
+    display: inline;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+}
+/*Main container*/
+.container{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    margin: 15px;
+    font-size: 25px;
+}
+/*----------------------------Media query---------*/
+@media screen and (max-width: 700px) {
+    .right-list a {display: none;}
+    .right-list a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .right-list.responsive {position: relative;}
+    .right-list.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .right-list.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/*------------------------------------------------*/
+.container .icon{
+    display: none;
+}
+.bodyPage{
+
+    margin: 30px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    transition: 300ms ease-in-out;
+    
+}
+.left-list {
+    float: left;
+}
+.right-list {
+    float: right;
+
+}
+.right-list a:active{
+    transition: 300ms;
+}
+.right-list a:hover{
+    background-color: #182231;
+}
+/*Body From the page*/
+.bodyPage{
+    color: aliceblue;
+    text-align: right;
+    font-size: 25px;
+    margin: 45px;
+    padding: auto;
+    margin-top: 300px;
+    margin-right: 150px;
+    margin-bottom: 400px;
+}
+/*Button*/
+.btnCv{
+    margin-top: 30px;
+    background-color: #ff334e;
+    border-color: #ff334e;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*button when is pressed*/
+.btnCv:active{
+    background-color: #a50016;
+    border-color: #a50016;;
+    
+}
+/*---------------About me--------------------------*/
+.containerAboutMe{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #020225f6;
+    color: white;
+    margin: 0;
+}
+.containerAboutMe span{
+    color: #20A4F3;
+}
+
+.containerAboutMe {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 100vh;
+}
+
+.aboutMeText {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+.aboutMeText h4{
+    font-size: 45px;
+}
+.aboutMeText p{
+    font-size: 37px;
+}
+
+.image {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #020225f6;
+    margin-top: 45px;
+    border-radius: 50px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+
+}
+/*----------------------Proyects----------------------------------*/
+.containerProyects{
+    background-color: #020225f6;
+    color: white;
+}
+.containerProyects h4{
+    font-size: 30px;
+    text-align: center;
+    color: #20A4F3;
+
+}
+.containerProyects .firstProyect .tittle{
+    font-size: 25px;
+    margin: 25px;
+}
+.containerProyects .firstProyect .proyect{
+    display: flex;
+}
+.containerProyects .firstProyect .proyect .paragraf{
+    font-size: 20px;
+    width: 40%;
+    border-radius: 10%;
+    text-align: center;
+    padding-top: 7%;
+}
+.containerProyects .firstProyect .proyect .paragraf h3{
+    margin: 50px;
+    text-align: center;
+    color: #20A4F3;
+}
+.containerProyects .firstProyect .proyect .paragraf .tecnologiesProyectMuro{
+    
+    margin-left: 25px;
+    text-align: center;
+
+}
+.containerProyects .firstProyect .proyect .paragraf .tecnologiesProyectMuro .tecnologies{
+    margin: 10px;
+}
+
+.containerProyects .firstProyect .proyect .imageProyect img{
+    width: 100%;
+    height: auto;
+}
+
+/*----------------------------------------------------------------------*/
+.containerContactMe{
+    margin: 400px;
+    background-color: #020225f6;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+.boxesContact{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    background-color: #020225f6;
+}
+.boxesContact .boxMail{
+    width: 40%;
+    padding: 40px;
+    margin-right: 300px;
+    display: inline-block
+}
+.boxesContact .boxMail label{
+    font-size: 30px;
+    font-weight: 500;
+}
+.boxesContact .boxMail .boxInput{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.boxesContact .boxMail .boxInput input,
+.boxesContact .boxMail .boxInput textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #20A4F3;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+.boxesContact .boxMail span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #2778a3;
+    font-size: 20px;
+     
+}
+.boxesContact .boxMail .boxInput input:focus ~ span,
+.boxesContact .boxMail .boxInput input:valid ~ span{
+    color: #079cff;
+    font-size: 15x;
+    transform: translateY(-25px);
+}
+.boxesContact .boxMail .boxInput textarea:focus ~ span,
+.boxesContact .boxMail .boxInput textarea:valid ~ span{
+    color: #079cff;
+    font-size: 15x;
+    transform: translateY(-25px);
+}
+.tittleBox{
+    margin-bottom: 100px;
+}
+.boxesContact .icon{
+    min-width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
