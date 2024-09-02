@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
 }
 /*Navar*/
-ul li{
+a{
     display: inline;
     margin-top: 20px;
     font-family: "Roboto", sans-serif;
@@ -23,6 +23,33 @@ ul li{
     display: flex;
     margin: 15px;
     font-size: 25px;
+}
+/*----------------------------Media query---------*/
+@media screen and (max-width: 700px) {
+    .right-list a {display: none;}
+    .right-list a.icon {
+      float: right;
+      display: block;
+
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .right-list.responsive {position: relative;}
+    .right-list.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .right-list.responsive a:not(.icon) {
+      float: none;
+      display: block;
+      text-align: left;
+      margin-right: 20px;
+    }
+  }
+/*------------------------------------------------*/
+.container .icon{
+    display: none;
 }
 .bodyPage{
 
@@ -44,6 +71,9 @@ a{
     float: right;
 
 }
+.right-list a:active{
+    transition: 300ms;
+}
 .right-list a:hover{
     background-color: #182231;
 }
@@ -60,6 +90,7 @@ a{
 }
 /*Button*/
 .btnCv{
+    margin-top: 30px;
     background-color: #ff334e;
     border-color: #ff334e;
     border-radius: 100px;
@@ -105,7 +136,7 @@ a{
     font-size: 45px;
 }
 .aboutMeText p{
-    font-size: 37px;
+    font-size: 25px;
 }
 
 .image {
@@ -166,156 +197,7 @@ a{
 .containerProyects .firstProyect .proyect .imageProyect img{
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-/*---------------------Slides-------------------------------------*/
-/*.containerProyects{
-position: relative;
-width: 100%;
-height: 100vh;
-background-color: #020225f6;
-color: white;
-}
-.slider input{
-    visibility: hidden;
-    display: none;
-}
-.buttons{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 50px;
-    gap: 10px;
-}
-.buttons label{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition: 300ms;
-}
-.buttons label:hover{
-    scale: 1.2;
-    opacity: 1;
-}
-.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
-.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3){
-    opacity: 1;
-    scroll-margin: 1.2;
-    width: 40px;
-}
-.contentSlide{
-    position: relative;
-    width: 300vw;
-    display: flex;
-    transition: 300ms ease-in-out;
-
-}
-.firstSlide, .secondSlide, .tirdSlide{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.slider input:nth-child(1):checked ~ .contentSlide{
-    left: 0;
-}
-.slider input:nth-child(2):checked ~ .contentSlide{
-    left: -100vw;
-}
-.slider input:nth-child(3):checked ~ .contentSlide{
-    left: -200vw;
-}
-
-/*-------------------------first slide----------------------------------*/
-
-/*.firstSlide{
-    background-color: #020225f6;
-    margin-right: 10px;
-    
-}
-.firstSlide .tittle{
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.firstSlide .proyect{
-display: flex;
-justify-content: space-between;
-}
-.firstSlide .proyect .paragraf{
-    flex: 0.5;
-    font-size: 25px;
-    margin-top: 200px;
-}
-.firstSlide .proyect .paragraf .tecnologiesSlideMuro{
-    display: flex;
-}
-.firstSlide .proyect .imageSlide{
-    width: 70vw;
-    max-width: 2000px;
-    min-width: 300px;
-}*/
-/*-------------------------second slide----------------------------------*/
-/*.secondSlide{
-    background-color: #020225f6;
-}
-.secondSlide .tittle{
-    text-align: center;
-    margin-bottom: 30px;
-}
-.secondSlide .proyectAgenda{
-    display: flex;
-    justify-content: space-between;
-}
-.secondSlide .proyectAgenda h3{
-    color: #079cff;
-}
-.secondSlide .proyectAgenda .detailsAgenda{
-    flex: 0.5;
-    font-size: 25px;
-    margin-top: 200px;
-}
-.secondSlide .proyectAgenda .detailsAgenda .tecnologiesAgenda{
-    display: flex;
-    
-}
-.tecnologiesAgenda .javascript, .css, .html{
-
-    margin: 10px;
-}
-.secondSlide .proyectAgenda .imageAgenda{
-margin-top: 100px;
-width: 60vw;
-max-width: 2000px;
-min-width: 300px;
-}
-/*-------------------------third slide----------------------------------*/
-/*.thirdSlide .tittle{
-    align-items: center;
-}
-.thirdSlide .proyectEMarket{
-    display: flex;
-}
-.thirdSlide .proyectEMarket .detailsEMarket{
-
-    font-size: 25px;
-    margin-top: 200px;
-}
-.thirdSlide .proyectEMarket .detailsEMarket .tecnologiesEMarket{
-    display: flex;
-}
-.thirdSlide .proyectEMarket .imageEMArket{
-    float: right;
-}
-
 
 /*----------------------------------------------------------------------*/
 .containerContactMe{
