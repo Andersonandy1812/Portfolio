@@ -76,7 +76,7 @@ a{
 
 }
 .right-list a:active{
-    transition: 300ms;
+    transition-duration: 3s;
 }
 .right-list a:hover{
     background-color: #182231;
@@ -308,4 +308,16 @@ a{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+/*Button Send email*/
+.boxesContact .boxMail .boxInputButton{
+ background-color: #079cff;
+ border: 2px;
+ border-radius: 15px;
+ font-size: 25px;
+ padding: 15px;
+ cursor: pointer;
+}
+.boxesContact .boxMail .boxInputButton:active{
+    background-color: #063e64;
 }

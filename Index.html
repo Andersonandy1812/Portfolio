@@ -198,7 +198,7 @@
         <h2 class="tittleBox">Formas de Contacto</h2>
         <div class="boxesContact">
           <div class="boxMail">
-            <form action="" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="boxInput">
                 <input
                   type="text"
@@ -218,12 +218,11 @@
                 <span>email:</span>
               </div>
               <div class="boxInput">
-                <textarea required="required"></textarea>
+                <textarea name="message" required="required"></textarea>
                 <span>mensaje: </span>
               </div>
-
-              <input type="submit" value="enviar email" />
-              <button type="submit" value="enviar email">Enviar</button>
+              <input type="hidden" name="access_key" value="8e2d9a22-94c8-49f0-baae-0aabeab489a6">
+              <button class="boxInputButton" type="submit" value="enviar email">Enviar</button>
             </form>
           </div>
           <div class="boxContact">
