@@ -54,6 +54,10 @@ a{
     bottom: 0;
     left: 0;
     z-index: 1000;
+    opacity: 0.7;
+  }
+  .volverPrincipal:hover{
+    cursor: pointer;
   }
 /*------------------------------------------------*/
 .container .icon{

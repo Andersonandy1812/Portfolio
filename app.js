@@ -6,12 +6,12 @@ function myFunction() {
       x.className = "right-list";
     }
   }
- // Seleccionar el botón
+ // selecting the property by the id 
  const volverPrincipal = document.getElementById('volverPrincipal');
 
- // Detectar el evento de scroll
+ // detecting the scroll
  window.addEventListener('scroll', () => {
-     // Mostrar el botón si el desplazamiento es mayor a 100px
+     // This is to change the display if the scroll is more than 100px
      if (window.scrollY > 100) {
       volverPrincipal.style.display = 'block';
      } else {
