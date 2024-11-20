@@ -1,11 +1,3 @@
-function myFunction() {
-    var x = document.getElementById("right-list");
-    if (x.className === "right-list") {
-      x.className += " responsive";
-    } else {
-      x.className = "right-list";
-    }
-  }
  // selecting the property by the id 
  const volverPrincipal = document.getElementById('volverPrincipal');
 
@@ -23,3 +15,12 @@ function myFunction() {
  volverPrincipal.addEventListener('click', () => {
      window.scrollTo({ top: 0, behavior: 'smooth' });
  });
+
+function myFunction() {
+    var x = document.getElementById("right-list");
+    if (x.className === "right-list") {
+      x.className += " responsive";
+    } else {
+      x.className = "right-list";
+    }
+  }
