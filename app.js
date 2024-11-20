@@ -1,4 +1,5 @@
- // selecting the property by the id 
+function startToTop(){
+// selecting the property by the id 
  const volverPrincipal = document.getElementById('volverPrincipal');
 
  // detecting the scroll
@@ -10,6 +11,7 @@
       volverPrincipal.style.display = 'none';
      }
  });
+}
 
  // Opcional: Agregar un evento al botón (por ejemplo, para subir al inicio)
  volverPrincipal.addEventListener('click', () => {
